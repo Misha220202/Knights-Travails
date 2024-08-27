@@ -31,9 +31,10 @@ const knightMoves = (start, end) => {
 
         return null;
     }
-    
-    return bfs(start, end);
+
+    const path = bfs(start, end);
+    console.log(path);
+    return path;
 }
 
-const path = knightMoves([3, 3], [4, 3]);
-console.log(path);
+knightMoves([3, 3], [4, 3]);
