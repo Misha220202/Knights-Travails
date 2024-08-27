@@ -2,9 +2,7 @@ const knightMoves = (start, end) => {
 
     const moves = [[1, 2], [2, 1], [2, -1], [1, -2], [-1, -2], [-2, -1], [-2, 1], [-1, 2]];
 
-    const isValid = ([x, y]) => {
-        return x >= 0 && x < 8 && y >= 0 && y < 8;
-    }
+    const isValid = ([x, y]) => x >= 0 && x < 8 && y >= 0 && y < 8;
 
     const bfs = (start, end) => {
         const queue = [[start]];
